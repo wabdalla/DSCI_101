@@ -1,0 +1,152 @@
+---
+title: "Final Exam"
+author: "Your Name Here"
+date: "2024-05-03"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+# Final Exam DSCI 101 Spring 2024
+
+
+### **Instructions**
+
+* Below is your final exam for DSCI 101 for Spring 2024. 
+
+* You may consult your class notes or the help buttons in R. 
+
+* You are only allowed to work within RStudio. Any file you need to access, you should do it within RStudio.
+
+* Make sure to answer in full sentences if you see *YOUR WRITTEN ANSWER HERE* after a question. 
+
+* Answer each question using this same file. Your codes should go inside the codechunks. 
+
+* Once you are done with the exam, you must knit the file and load the html document in Sakai. 
+
+### **Dataset Description: Chicago COVID Cases**
+
+The dataset, named `chicago_covid_cases.csv`, has been sourced from the City of Chicago Data Portal. It represents COVID-19 cases in Chicago and has been cleaned to ensure a standardized format. The dataset includes key variables such as 'date,' 'total' (total cases), 'female,' 'male,' and columns related to different age groups. 
+
+
+### **File submitted in HTML Format **
+
+Submit the html file in Sakai once you are done with your exam. If you request help from your instructor to knit the file, you will lose 15 points. 
+
+
+### **Loading Packages**
+
+```{r packages, message=FALSE, warning = FALSE}
+library(tidyverse)
+library(plotly)
+```
+
+### **Question 1** (20 points)
+
+a. Read in the dataset `chicago_covid_cases.csv`. Name the dataframe `cases`. 
+
+```{r question_1a, message=FALSE}
+
+
+```
+
+b. Check the class of the `date` column in the code chunks. What class should it be? and why is it not reflecting the correct class?  
+
+*YOUR WRITTEN ANSWER HERE*
+
+```{r question_1b, message=FALSE}
+
+
+```
+
+c. Transform the `date` column into a variable of class "Date" (make this transformation within the same dataframe and make sure the column is still named `date`). Once you make the transformation, check within the same code chunks the new class of the column `date`. 
+
+```{r question_1c, message=FALSE}
+
+
+```
+
+d. Create a new column called `year` based on the `date` variable, then count the number of cases per year. **Your final output should be a printed dataframe with two columns: the year and the number of cases per year.**
+
+```{r question_1d, message=FALSE}
+
+
+```
+
+e. Create a new column called `month` based on the `date` variable. The month column should contain the actual names of the month (i.e., January, February... etc), then determine the average number of cases per month. **Your final output should be a printed dataframe with with two columns: the month and the average number of cases per month.**
+
+```{r question_1e, message=FALSE}
+
+
+```
+
+### **Question 2** (20 points)
+
+
+(pts) Using `plotly`, generate a scatter plot for male (y axis) vs female (x axis). In the same plot, separate the data points by years, where each year is a different color. The plot title should be "Male vs Female Cases by Year", the x-axis title should be "Female Cases", and the y-axis title should be "Male Cases". **Your final output should be a printed interactive plot.**
+
+```{r question_2, message=FALSE}
+
+
+```
+
+### **Question 3** (20 points)
+Recreate Plot # 1. Recreating this plot will require pivoting, string cleaning, and proper labeling. Follow the following parts to be able to recreate the plot: 
+
+a. Using the `cases` dataframe, select the column `date` as well as all the eight columns that start with "age_". Save it into a new dataframe. **Do not print the dataframe**
+
+```{r question_3a, message=FALSE}
+
+
+```
+
+b. Reshape the dataframe from part a into a long format, such that the first column is `date`, the second column are now rows containing only the age category (i.e., age_18_29), and the third column is the number of cases for the corresponding age category and date. Save this into a dataframe. **Do not print the dataframe**  
+
+```{r question_3b, message=FALSE}
+
+
+```
+
+c. Using the dataframe created in part b, create a new column with age categories in the following format: "50-59" (where the original format was "age_50_59"). **Do not print the dataframe**  
+
+```{r question_3c, message=FALSE}
+
+
+```
+d. Using the dataframe created in part c, recreate Plot # 1 using ggplot. **Your final output should be a printed plot**
+
+```{r question_3d, message=FALSE}
+
+
+
+```
+
+### **Question 4** (20 points)
+
+Take the total cases in the year 2020 as a sample and perform a bootstrap analysis. Estimate the standard error of the mean. Perform 1000 iterations.
+Note: You can turn a column of a datafame into a vector by using the following code `as.vector(dataframe$column_name)` or by using the function `pull` in the following format `pull(dataframe, column_name)`. **Your final output should be the printed value of the standard error.**
+
+```{r question_4, message=FALSE}
+
+
+```
+
+### **Question 5** (20 points)
+
+Suppose there is an urn that contains 10 marbles (3 red, 5 blue, and 2 yellow). If you randomly draw one marble, the theorical probability that the marble is yellow is 2/10 (0.2). 
+
+Create a function that simulates drawing one marble from that urn, then apply a Monte Carlo simulation to estimate the probability of getting a yellow marble. Use 1000 iterations. **Your final output should be the printed estimated probability.**
+
+ 
+```{r question_5, message=FALSE}
+
+
+```
+
+### **Extra Credit** (10 points)
+
+Open a new R script file and recreate the shiny app EXACTLY as it is. The dataframe used to create the bar graph is `mtcars`. If you decide to do this for extra credit, you can upload this R script along with your html file. 
+
+No credit will be give if your app does not run. 
+
