@@ -1,0 +1,102 @@
+---
+title: "Homework 2"
+subtitle: "DSCI 101"
+author: "Your Name Here"
+date: "Due 09-23-2024"
+output: html_document
+---
+
+
+### **Instructions**
+
+
+
+For each exercise, write the codes inside the coding chunks provided. To avoid running into any last minute errors, I recommend knitting the file every time you finish working on an exercise. Submit the **html file** in Sakai before the deadline.
+
+### **Exercise 1**
+
+(3 pts) Create a numeric vector named vector_1 using the `sequence` function discussed in class. The vector should contain the values 5, 10, 15, 20, and 25. Calculate the mean of this vector and save it as an object called `mean_value`. ***Your final output when knitting the file should show the printed values for `mean_value`***
+
+```{r ex1, message=FALSE}
+
+
+
+```
+
+
+### **Exercise 2**
+
+(3 pts) Create a data frame with the following information about three of your friends:
+
+* Name (character)
+* Age (numeric)
+* Favorite Color (character)
+
+Make sure to include at least three rows of data. Make sure you provide a name to this dataframe (you can name it whatever you like.) ***Your final output when knitting the file should show the printed dataframe***
+
+```{r ex2}
+
+
+
+```
+
+### **Exercise 3**
+
+
+(4 pts) Create two numeric vectors: `vector1` with values 1, 2, 3, and `vector2` with values 4, 5, 6. Perform the following operations:
+
+* Add `vector1` and `vector2` and store the result in a new vector called `sum_vector.`
+* Subtract `vector2` from `vector1` and store the result in a new vector called `diff_vector.`
+* Multiply `vector1` and `vector2` element-wise and store the result in a new vector called `prod_vector.`
+* Divide `vector1` by `vector2` element-wise and store the result in a new vector called `quot_vector.`
+
+
+***Your final output when knitting the file should show the printed four result vectors.***
+
+```{r ex3}
+
+
+
+```
+
+### **Exercise 4**
+
+(7 pts) Suppose you have 5 students in a classroom. Let the vector `stud_name` represent these students' names. Let vectors `exam_1` and `exam_2` be two vectors with their respective scores in Exams 1 & 2. 
+
+```{r ex4info, message = FALSE}
+stud_name <- c("Emily", "John", "Steve", "Mike", "Sarah")
+
+exam_1<-c(90, 50, 45, 52, 100)
+
+exam_2<-c(100, 50, 40, 40, 100)
+```
+A student passes if they have an average score of 50. They fail if they have their average score is below 50. And they will be granted an extension if their average score is exactly 50. 
+
+Create a for loop combined with if-else statements that computes each student's average score in the class. 
+Within the for loop, it should be printed whether each student passed, failed, or will be granted an extension.
+The final output should look like: 
+"Emily passed the class with an average of 95."
+"John will be granted an extension in the class with an average of 50"
+"Steve failed the class with an average of 42.5"... etc.
+
+***Your final output when knitting the file should print all desired outcomes.***
+
+
+```{r ex4, message = FALSE}
+
+
+
+```
+
+
+### **Exercise 5**
+
+(8 pts) Zodiac signs can be categorized into water signs (cancer, scorpio, pisces), air signs (gemini, libra, aquarius), earth signs (taurus, virgo, capricorn), and fire signs (aries, leo, sagittarius). Create a function such that it's argument is a zodiac sign, and it will return what zodiac category they belong to. Make sure to include in your output the following message "cannot read your input, try again!" in the case that someone types an argument that is not a zodiac sign. 
+
+***Your final output when knitting the file should print the function testing all zodiac signs and something that is is not a zodiac sign***
+
+```{r ex5, message = FALSE}
+
+
+
+```
