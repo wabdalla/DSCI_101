@@ -1,0 +1,6 @@
+Name,Age,total_Income,var_1,var_2,var_3,zipcode,honesty,cat_total
+Val,18,18000,apple,carrots,elephant,60001,agree,0
+Derek,25,25000,grapes,carrots,tiger,60073,disagree,1
+Whitney,30,30000,bananas,carrots,lion,60109,disagree,2
+Sasha,40,40000,peaches,carrots,rabbit,60111,disagree,1
+Daniella,45,45000,bananas,carrots,shark,60155,agree,1
