@@ -1,0 +1,192 @@
+---
+title: "Homework 3"
+author: "YOUR NAME HERE"
+date: "2024-10-11"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+### **Instructions**
+
+Use functions learned from the tidyverse package to complete this homework assignment. Load all the packages you will use throughout this homework in the loading packages section below. 
+
+
+For Exercise 2, you will use the `Lahman` package. Please install the package `install.packages("Lahman")` in your console, then load the package in the loading packages section below. 
+
+
+For Exercise 3, you will use the `nycflights13` package. Please install the package `install.packages("nycflights13")` in your console, then load the package in the loading packages section below. 
+
+
+Submit the html file in Sakai before the deadline.
+
+
+### **Loading Packages**
+
+(5 points)
+
+```{r packages, message=FALSE, warning = FALSE}
+
+
+
+```
+
+
+### **Exercise 1**
+
+(30 points) Using the `cubs_all_time` dataset found in the data folder. Answer the following questions:
+
+
+a) Read in the csv file and name the dataframe `cubs_all_time`. 
+
+```{r ex1a, message = FALSE}
+
+
+
+
+```
+
+b) How many total games have the Cubs won between 1876 and 2022 (inclusive) and how many total games have the Cubs lost between 1876 and 2022 (inclusive)? ***Your final output should be a printed dataframe that has two columns reflecting these two numbers.***
+
+```{r ex1b, message = FALSE}
+
+
+
+```
+
+c) What year did the Cubs score the most runs? What year did the Cubs score the fewest runs? Do you have any thoughts about the year that the Cubs scored the fewest runs? ***Your final output should be a printed dataframe that has two columns and two rows. The two columns are years and the number of runs. One row should represent the year with the most runs, and another should represent the year with the fewest runs***
+
+*YOUR WRITTEN ANSWER HERE*
+
+```{r ex1c, message = FALSE}
+
+
+
+```
+
+d) In how many seasons was the Cubs total attendance (i.e. the variable Attendance) over 3 million? ***Your final output should be a printed dataframe that has one column and one row representing the number of seasons.***
+
+
+```{r ex1d, message = FALSE}
+
+
+
+```
+
+e) In the years between 1982 and 2000 (inclusive), what was the greatest ratio of runs for (R) to runs against (RA) in a single season? ***Your final output should be a printed dataframe that has one column and one row representing the greatest ratio.***
+
+```{r ex1e, message = FALSE}
+
+
+
+```
+
+### **Exercise 2**
+
+(18 points) The data you will use in this exercise is called `Teams` and you will find it inside the `Lahman` package. Make sure you load the package in the "Loading Packages" section. To put this dataset in your environment simply type `data("Teams")` in your codes. Use `?Teams` or `help(Teams)` in your console to get a description of this data. 
+
+a) Read in the data directly from the package. 
+
+```{r ex2a, message = FALSE}
+
+
+
+
+
+```
+b) Create a dataframe that is a subset of the `Teams` dataframe that contains only the years from 2000 through 2009 (inclusive) and the variables yearID, W, and L. ***DO NOT print your dataframe.***
+
+```{r ex2b, message = FALSE}
+
+
+
+
+```
+
+
+c) How many years did the Chicago Cubs (teamID is "CHN") hit at least 200 HRs in a season and what was the median number of wins in those seasons (the seasons with at least 200 HRs). ***Your final output should be a printed dataframe that has two columns representing the number of seasons and the median number of wins.***
+
+
+```{r ex2c, message = FALSE}
+
+
+
+
+
+```
+
+### **Exercise 3**
+
+(23 points) The data you will use in this exercise is called `flights` and you will find it inside the `nycflights13` package. Make sure you load the package in the "Loading Packages" section. To put this dataset in your environment simply type `data("flights")` in your codes. Use `?flights` or `help(flights)` to get a description of this data.
+  
+a) Read in the data directly from the package. 
+
+```{r ex3a, message = FALSE}
+
+
+
+```
+
+b) What month of the year had the highest average time of departure delayed flights (the variable is `dep_delay`) and what is the value of this average? ***Your final output should be a printed dataframe that has two columns representing the month and the average time of departure. The final dataframe must only contain one row showing the month with the respective average delay.***
+
+```{r ex3b, message = FALSE}
+
+
+
+
+```
+
+c) Which origin airport has the highest proportion of delayed flights leaving? 
+Note: a flight is considered delayed if the departure delayed time (use variable `dep_delay`) is greater than 0 minutes, otherwise (including missing values) it is not delayed. ***Your final output should be a printed dataframe that has two columns representing the origin airport and the proportion of delayed departure flights. The final dataframe must only contain one row showing the highest proportion.***
+
+
+```{r ex3c, message = FALSE}
+
+
+
+
+```
+
+
+### **Exercise 4**
+
+(24 points) Using the `top_colleges_2022` dataset (in your data folder), answer the following questions:
+
+a) Read in the csv file and name the dataframe `college`. 
+
+```{r ex4a, message = FALSE}
+
+
+
+```
+
+b) How many colleges in this data set are in Illinois. ***Your final output should be a printed dataframe that has two columns and one row reflecting the name of the state  and the number of colleges in Illinois.***
+
+```{r ex4b, message = FALSE}
+
+
+
+```
+
+
+c) Find the undergraduate student population of LUC. (Note: undergraduate student population is represented by the variable `undergradPop`). ***Your final output should be a printed dataframe that has two columns and one row reflecting the name of the university and the number of undergraduate students.***
+
+
+```{r ex4c, message = FALSE}
+
+
+
+```
+
+
+d) Using the value obtained in part (c), how many colleges have an undergraduate student population larger than LUC? ***Your final output should be a printed dataframe that has one column and one row reflecting the number of colleges that have a larger undergraduate student population than LUC.***
+
+
+```{r ex4d, message = FALSE}
+
+
+
+
+```
