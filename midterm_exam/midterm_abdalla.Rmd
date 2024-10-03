@@ -1,0 +1,195 @@
+---
+title: "Exam 1"
+author: "YOUR NAME HERE"
+date: "2024-10-05"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+### **Instructions**
+
+Below is your midterm take home exam for DSCI 101 - Fall 2024. By taking this exam you are not working with any other student in the class or other resources outside of this class. You may consult your class notes or the help buttons in R. **If you are found to be working with someone else (classmate, tutor... etc.) an automatic 0 will be given on the midterm exam (both in class and take home) and you will be reported to the Dean's Office.**
+
+Use functions learned from the `tidyverse` package to complete this exam. Load all the packages you will use throughout this exam in the loading packages section below.
+
+Make sure to answer in full sentences if you see *YOUR WRITTEN ANSWER HERE* after a question. 
+
+Answer each question using this same file. Your codes should go inside the codechunks. 
+
+You will be examining the class survey dataset that you had to take at the beginning of the semester. I have cleaned the dataset for general use. Please refer back to the survey [here](https://forms.office.com/Pages/ResponsePage.aspx?id=408fApwrJEiDeLvPnsWsy0GW1-51jWZMpmlDitVq_wZUQzBVSkwzRTNGWTBLR0szOVlGTUw4Q05EQy4u). 
+
+
+
+### **File submitted in HTML Format **
+
+(15 points) Submit the html file in Sakai before the deadline. 15 points will be deducted if submitted in rmd format.
+
+
+### **Loading Packages**
+
+(5 points)
+
+```{r packages, message=FALSE, warning=FALSE}
+
+
+```
+
+### **Question 1** 
+
+
+(20 points) Using the `midterm_data` excel file found in the midterm_exam folder. Answer the following questions:
+
+a) Read in the csv file and name the dataframe `midterm_data`.  
+
+```{r question_1a, message=FALSE}
+
+
+```
+b) Check the class of the exercise column. What class should it be? and why is it not reflecting the correct class?  
+
+*YOUR WRITTEN ANSWER HERE*
+
+```{r question_1b, message=FALSE, warning = FALSE}
+
+
+
+```
+
+c) Within the same dataframe, change the class of the exercise column into numeric. Note: The data cell in question should turn into an NA, do not attempt to change that.  
+```{r question_1c, message=FALSE, warning = FALSE}
+
+
+
+```
+
+d) Check the class of the exercise column again to make sure the changes you did in part c went through. 
+
+```{r question_1d, message=FALSE}
+
+
+
+```
+
+### **Question 2**
+
+Answer the following questions:
+
+a. (5 points) Which graduating class group makes up the most of the survey? ***Your final output should be a printed dataframe that has two columns and 4 rows reflecting all graduating classes and the number of students in each one of the classes.***
+
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+
+```{r question_2a, message=FALSE}
+
+
+
+```
+
+b. (5 points) What is the most common zodiac in the survey? ***Your final output should be a printed dataframe that has two columns and one row reflecting the one most common zodiac and the number of students that identified with this zodiac sign***
+
+
+
+
+```{r question_2b, message=FALSE}
+
+
+```
+
+
+
+
+c. (10 points) Find how many students were born in each area of the United States (do not include in your analysis students born in Illinois or Outside of the US)? ***Your final output should be a printed dataframe that has two columns reflecting the four areas of the United States and the number of students in each area. The output should be sorted from the highest number of students to the smallest number of students in each area.***
+
+
+```{r question_2c, message=FALSE}
+
+
+
+```
+d. (5 points) What grades do students think they will get in the class? ***Your final output should be a printed dataframe that has two columns reflecting the grades (sorted from the lowest grade to the highest grade) and the number of students who think they will get that grade***
+
+```{r question_2d, message=FALSE}
+
+```
+
+
+
+
+
+
+### **Question 3**
+
+(15 points) If a person is 5'7 (5 feet and seven inches), then their total height in inches is 67 inches (since there are 12 inches per foot). Find each student's total height in inches. Then find the average height in inches across all students. ***Your final output should be a printed dataframe that has one column reflecting the average height (in inches) across all students***
+
+
+```{r question_3, message=FALSE}
+
+```
+
+### **Question 4**
+
+(20 points) Is there a difference in the average number of exercise time in students who are seniors and those that are not seniors? ***Your final output should be a printed dataframe that has two columns reflecting the graduating class (seniors & not seniors) and another column reflecting the average number of exercise***
+
+
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+```{r question_4, message=FALSE}
+
+
+
+```
+
+### **Question 5**
+
+(20 points) In all of Prof. Abdalla's classes, the final grade that a student gets at the end of the semester is computed as a weighted average. What this means is that some categories weigh more than other categories when computing your final average. In DSCI 101, the final grade is computed using the following weights:
+
+|Categories     |Percentage     |
+|:-------------:|:-------------:|
+|Participation  | 5%            |
+|Homework       |25%            |
+|2 Midterms     | 45%           |
+|Final Exams    | 25%           |
+
+
+The way this works is that every weight is multiplied by the final average score you get in every category. For example, if you get a an average grade of 98, 100, 85, and 90 on participation, homework, midterms, and final exam, your final grade will be computed as: 
+`0.05*98+100*0.25+85*0.45+90*0.25=90.65`
+Create a function such that the argument is a vector of scores where the first, second, third, and fourth elements of the vector represent a student's average score on  participation, homework, midterms, and final exam, respectively, and the outcome is the student's final grade in the class. 
+Once you are done building the function you have to test it out with the following vector (to make sure it's working properly):
+`scores = c(98,100,85,90)`
+
+
+```{r question_5, message=FALSE}
+
+
+```
+
+
+
+
+### **Question 6**
+
+(20 points) In a company, employees get different kinds of perks based on the amount of hours they worked during the year. If the employee worked less than or equal to 2000 hours, they will not get a perk and they will get paid $10 an hour. If they worked more than 2000 hours but less than or equal to 3000 hours they will get a paid trip to Hawaii and they will get paid $20 an hour. Finally, if they worked more than 3000 hours, they will get a brand new car and they will get paid $30 an hour. 
+```{r question7info, message = FALSE}
+employee <- c("Mary", "John", "Tim", "Holly", "Glen")
+hours <- c(2080, 3120, 2600, 1900, 4000)
+```
+
+Create a for loop that computes and prints each employee's perk along with their annual salary (hours worked * hourly rate). 
+The final output should look like: 
+
+"Mary will get a paid trip to Hawaii and a salary of 41600"
+
+"John will get a brand new car and a salary of 93600"... etc.
+
+```{r question_6, message=FALSE}
+
+
+
+```
+
+ 
