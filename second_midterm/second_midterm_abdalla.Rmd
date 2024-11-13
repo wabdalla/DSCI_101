@@ -1,0 +1,157 @@
+---
+title: "Exam 2"
+author: "YOUR NAME HERE"
+date: "2024-11-14"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+### **Instructions**
+
+Below is your second midterm take home exam for DSCI 101 - Fall 2024. By taking this exam you are not working with any other student in the class or other resources outside of this class. You may consult your class notes or the help buttons in R. **If you are found to be working with someone else (classmate, tutor, family member... etc.) an automatic 0 will be given on the second midterm exam (both in class and take home) and you will be reported to the Dean's Office.**
+
+Use functions learned from the `tidyverse` package to complete this exam. Load all the packages you will use throughout this exam in the loading packages section below.
+
+Make sure to answer in full sentences if you see *YOUR WRITTEN ANSWER HERE* after a question. 
+
+Answer each question using this same file. Your codes should go inside the codechunks. 
+You will be examining the class survey dataset that you had to take at the beginning of the semester. I have cleaned the dataset for general use and added a few columns with "fake" data. Please refer back to the survey [here](https://forms.office.com/Pages/ResponsePage.aspx?id=408fApwrJEiDeLvPnsWsy0GW1-51jWZMpmlDitVq_wZUQzBVSkwzRTNGWTBLR0szOVlGTUw4Q05EQy4u). 
+
+In addition to the class survey, you will need to examine two more datasets: midterm_studentID and zodiac_data that are included inside the same file. 
+
+For Question 5, you will need to recreate Plot # 1, which is a pdf that is included in the same folder. 
+
+### **File submitted in HTML Format **
+
+(5 points) Submit the html file in Sakai before the deadline. 5 points will be deducted if submitted in rmd format.
+
+
+### **Loading Packages**
+
+(5 points)
+
+```{r packages, message = FALSE, warning = FALSE}
+
+
+
+```
+
+### **Question 1**
+
+(15 points) 
+
+
+a. Read in the dataset `midterm_data.csv` and save it into a dataframe called `midterm_data`.  
+
+```{r question_1a, message = FALSE, warning = FALSE}
+
+
+
+```
+b. Using the columns `Day`, `Month`, and `Year`, create a new column called birthday within `midterm_data` itself. When creating this column, make sure it's created with a class Date.
+
+```{r question_1b, message = FALSE, warning = FALSE}
+
+
+
+
+```
+c. Using one of the functions from the `map` family functions, check the class of all the columns in `midterm_data`. Make sure your output is in the form of a vector and not a list. ***Your final output should be a printed vector that shows you the class of every column in the dataframe.***
+
+```{r question_1c, message = FALSE, warning = FALSE}
+
+
+
+```
+
+### **Question 2**
+
+(15 points)
+
+a. Read in the dataset `midterm_studentID.csv` and save it into a dataframe called `midterm_studentID`. 
+
+```{r question_2a, message = FALSE, warning = FALSE}
+
+
+```
+
+b. Using the `studentID` column, calculate how many students ID start with every digit from 1 to 9. Meaning, calculate how many students have an ID that starts with 1, how many students have an ID that starts with 2... etc. how many students have an ID that starts with 9. ***Your final output should be a printed dataframe with two columns and 9 rows that shows you each digit (1-9) and the corresponding number of students.***
+
+```{r question_2b, message = FALSE, warning = FALSE}
+
+
+
+```
+
+c. Calculate how many students have a student ID that starts with a digit of 6 AND think cereal is a soup (i.e., cereal = Yes). ***Your final output should be a printed dataframe with three columns and one row that shows you the cereal, the digit, and the number of students.***  
+
+```{r question_2c, message = FALSE, warning = FALSE}
+
+
+
+```
+### **Question 3**
+
+(20 points) 
+
+Make a bar graph of student's favorite color. Make sure that the bars for each color match the color that is given, (ie. if there are 3 students who like pink then that bar's color should be pink). Create a nice plot that has a "linedraw" theme (background), an appropriate title, and axis titles (All titles must start with capital letters). 
+
+
+```{r question_3, message = FALSE, warning = FALSE}
+
+
+
+```
+
+
+
+### **Question 4**
+
+(20 points) 
+
+a. Create a new function called color_popularity such that it's argument is a color. If the color is Black, Blue, or Green, then the function will return "Popular Color", any other color or argument, then the function will return "Unpopular Color". Test the function with the color Black and test it with the color Purple. Note: Make sure that the first letter of the color is a capital letter (i.e. Blue). 
+
+
+```{r question_4a, message = FALSE, warning = FALSE}
+
+
+
+```
+
+b. Apply the function you created in part a to the midterm_data using the `map_chr` function (or any other function in the `map` family). To accomplish this, you must create a new column by applying the new function you created in part a to the column color. Then calculate how many students like a popular color and how many like an unpopular color. ***Your final output should be a printed dataframe with two columns and two rows that shows you the popularity categories and the number of students.***   
+```{r question_4b, message = FALSE, warning = FALSE}
+
+
+
+```
+
+### **Question 5**
+
+(20 points) 
+
+a. Read in the dataset `zodiac_data.csv` and save it into a dataframe called `zodiac_data`. 
+
+```{r question_5a, message = FALSE, warning = FALSE}
+
+
+
+```
+
+b. Zodiac signs can be categorized into Water Signs (Cancer, Scorpio, Pisces), Air Signs (Gemini, Libra, Aquarius), Earth Signs (Taurus, Virgo, Capricorn), and Fire Signs (Aries, Leo, Sagittarius). Merge `zodiac_data` and `midterm_data` so that we can see every student's zodiac sign category. ***DO NOT PRINT THE DATAFRAME.***
+
+```{r question_5b, message = FALSE, warning = FALSE}
+
+
+
+
+```
+
+c. Using the results from part b, recreate the attached plot (Plot # 1) EXACTLY as it appears. Colors used are darkblue, forestgreen, firebrick1, and deepskyblue. 
+
+```{r question_5c, message = FALSE, warning = FALSE}
+
+
+
+
+```
