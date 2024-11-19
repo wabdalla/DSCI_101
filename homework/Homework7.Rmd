@@ -1,0 +1,104 @@
+---
+title: "Homework 7"
+author: "YOUR NAME HERE"
+date: "2024-11-25"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+### **File in html Format**
+
+(5 points)
+
+Submit the html file in Sakai before the deadline.
+
+
+### **Loading Packages**
+
+(5 points)
+
+```{r packages, message = FALSE, warning = FALSE}
+
+
+
+```
+
+### **Exercise**
+
+In a standard deck of cards (see attachment), the probability of randomly selecting one card from the deck can be computed as counting the number of cards that meet the characteristic that you are interested in computing the probability on, divided by the total number of cards in the deck. For example, if you are interested in computing the probability that the card has a spade, then you count the number of cards in the deck that have spades (13 cards), divided by the total number of cards in the deck (52 cards). Therefore, the probability of selecting a card that has a spade is `13/52 = 0.25`. Notice that the cards that meet the characteristic that you are trying to compute the probability on, form a subset of the entire deck.
+
+
+a) (20 points) Create a function that simulates drawing one card from a standard deck of cards and returns whether that card belongs or doesn't belong to a subset (cards that meet the criteria you are trying to compute the probability on). Name the function `drawing_card`. The arguments of the function should be `i`, `full_deck_of_cards`, and `subset_cards`, representing the iterations, the vector for the full deck of cards, and a vector of the subset of cards that meet the characteristics of the probability you are interested in computing; respectively. 
+
+
+```{r part_a, message = FALSE, warning = FALSE}
+
+
+
+
+```
+
+b) (10 points) What is the theoretical probability of getting a face card (i.e., Jack, Queen, King)? ***Print this probability in your final output***
+
+```{r part_b, message = FALSE, warning = FALSE}
+
+
+
+
+```
+
+
+
+c) (20 points) Use the function created in *part a* to simulate the experimental probability of getting a face card (you must use a function from the `map` family). Use 1000000 iterations. ***Print this experimental probability in your final output.*** 
+
+
+```{r part_c, message = FALSE, warning = FALSE}
+
+
+
+
+```
+
+d) (5 points) Compare the difference between the theoretical probability in part b to the experimental probability in part c by subtracting these two numbers. ***Print this difference in your final output***
+
+```{r part_d, message = FALSE, warning = FALSE}
+
+
+
+
+```
+
+e) (10 points) What is the theoretical probability of getting a numbered card (i.e., 2, 3, .., 10)? ***Print this probability in your final output***
+
+
+```{r part_e, message = FALSE, warning = FALSE}
+
+
+
+```
+
+f) (20 points) Use the function created in *part a* to simulate the experimental probability of getting a numbered card (you must use a function from the `map` family). Use 1000000 iterations. ***Print this experimental probability in your final output.*** 
+
+
+```{r part_f, message = FALSE, warning = FALSE}
+
+
+
+
+
+```
+
+
+g) (5 points) Compare the difference between the theoretical probability in part e to the experimental probability in part f by subtracting these two numbers. ***Print this difference in your final output***
+
+```{r part_g, message = FALSE, warning = FALSE}
+
+
+
+```
+
+
+
+
