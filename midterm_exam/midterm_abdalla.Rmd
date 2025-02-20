@@ -1,0 +1,238 @@
+---
+title: "Exam 1"
+author: "YOUR NAME HERE"
+date: "2025-02-20"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+### **Instructions**
+
+Below is your first midterm take home exam for DSCI 101 - Spring 2025. This exam should be written only by the student. By taking this exam you are not working with any other student in the class or other resources outside of this class. 
+
+You are allowed to consult: 
+
+* Class notes.
+* Class R Scripts. 
+* Class homework. 
+* Help buttons in R. 
+
+You are NOT allowed to: 
+
+* Search for answers using search engines such as Google. 
+* Search for answers using artificial intelligence programs such as ChatGPT.
+* Consult with anyone (i.e., classmates, tutors, friends, family members... etc) 
+
+**If you are found to be working with someone else (classmate, tutor... etc.) or have used AI softwares to produce your answers, an automatic 0 will be given on the midterm exam (both in class and take home) and you will be reported to the Dean's Office.**
+
+Use functions learned from the `tidyverse` package to complete this exam. Load all the packages you will use throughout this exam in the loading packages section below.
+
+Make sure to answer in full sentences if you see *YOUR WRITTEN ANSWER HERE* after a question. 
+
+Answer each question using this same file. Your codes should go inside the codechunks. 
+
+You will be examining the class survey dataset that you had to take at the beginning of the semester. I have cleaned the dataset for general use. Please refer back to the survey [here](https://forms.office.com/Pages/ResponsePage.aspx?id=408fApwrJEiDeLvPnsWsy0GW1-51jWZMpmlDitVq_wZUNDdUS09YSkQ1RUFRSzVCWkVET1k3NU9GNS4u). 
+
+
+
+### **File submitted in HTML Format **
+
+Submit the html file in Sakai before the deadline. 10 points will be deducted if submitted in rmd format.
+
+
+### **Loading Packages**
+
+
+```{r packages, message=FALSE, warning=FALSE}
+
+
+
+```
+
+### **Question 1** 
+
+
+(10 points) Using the `midterm_data` excel file found in the midterm_exam folder. Answer the following questions:
+
+a) Read in the csv file and name the dataframe `midterm_data`.  
+
+```{r question_1a, message=FALSE}
+
+
+
+```
+b) Check the class of the professor_age column. What class should it be? and why is it not reflecting the correct class?  
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+```{r question_1b, message=FALSE, warning = FALSE}
+
+
+
+```
+
+c) Within the same dataframe, change the class of the professor_age column into numeric. Note: The data cells in question should turn into NA, do not attempt to change that.  
+
+```{r question_1c, message=FALSE, warning = FALSE}
+
+
+
+```
+
+d) Check the class of the professor_age column again to make sure the changes you did in part c went through. 
+
+```{r question_1d, message=FALSE}
+
+
+
+```
+
+### **Question 2**
+
+Answer the following questions:
+
+a. (2 points) How many student's does Prof. Abdalla have this semester on each one of her courses/sections? Which course/sections has the most number of students? ***Your final output should be a printed dataframe that has two columns and 4 rows reflecting all the courses/sections and the number of students in each one of the sections.***
+
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+
+```{r question_2a, message=FALSE}
+
+
+
+```
+
+b. (3 points) Who do students think will win in a fight: Taco, Grilled Cheese, or Hot Dog? ***Your final output should be a printed dataframe that has two columns reflecting the fight (sorted from Z to A) and the number of students who think will win. ***
+
+```{r question_2d, message=FALSE}
+
+
+```
+
+
+c. (4 points) What is the least common favorite social media platform in the survey? ***Your final output should be a printed dataframe that has two columns and one row reflecting the one least favorite social media platform and the number of students that identified with this social media platform.***
+
+
+```{r question_2b, message=FALSE}
+
+
+
+
+```
+
+
+
+
+d. (4 points) What is the ranking of student's favorite subject? To find the answer to this question, find how many students prefer each each subject (do NOT include in your analysis students that chose "None of the above"). ***Your final output should be a printed dataframe that has two columns reflecting the 5 subject areas and the number of students in each area. The output should be sorted from the highest number of students to the smallest number of students in each suject.***
+
+
+```{r question_2c, message=FALSE}
+
+
+
+```
+
+
+
+
+
+
+
+### **Question 3**
+
+(10 points) Grades of A, B, C, D, and F are worth 4, 3, 2, 1, and 0 points, respectively. What is the average grade (in points) students expect to get for each one of the courses/section?
+ ***Your final output should be a printed dataframe that has two columns reflecting course/section and the average expected grade***
+
+
+```{r question_3, message=FALSE}
+
+
+```
+
+### **Question 4**
+
+(10 points) A student is considered being born in the US if they were born in IL, US Midwest, US Northeast, US South, or US West. Is there a difference in the median number of exercise time in students who were born outside of the US vs those born in the US? ***Your final output should be a printed dataframe that has two rows and two columns reflecting the place of birth  (within US & outside of US) and another column reflecting the median number of exercise***
+
+
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+
+```{r question_4, message=FALSE}
+
+
+```
+
+### **Question 5**
+
+(12 points) In all of Prof. Abdalla's classes, the final grade that a student gets at the end of the semester is computed as a weighted average. What this means is that some categories weigh more than other categories when computing your final average. In a STAT 203 course, the final grade is computed using the following weights:
+
+|Categories     |Percentage     |
+|:-------------:|:-------------:|
+|Quizzes        |15%            |
+|Homework       |10%            |
+|Midterms       |50%            |
+|Final Exam     |25%            |
+
+
+The way this works is that every weight is multiplied by the final average score you get in every category. For example, if you get a an average grade of 90, 100, 70, and 85 on quizzes, homework, midterms, and final exam, your final grade will be computed as: 
+
+`90*0.15+100*0.10+70*0.50+85*0.25=79.75`
+
+Create a function such that the argument is a **vector** of scores where the first, second, third, and fourth elements of the vector represent a student's average score on quizzes, homework, midterms, and final exam, respectively, and the outcome is the student's final grade in the class. 
+
+Once you are done building the function you have to test it out with the following vector (to make sure it's working properly):
+
+`scores = c(90,100,70,85)`
+
+
+```{r question_5, message=FALSE}
+
+
+
+
+```
+
+### **Question 6**
+
+(15 points) When travelling through DSCI 101 Airlines, passengers get different gifts based on the number of miles they traveled. 
+
+If their total traveled miles is less than or equal to 50,000 miles, then they will not get any gift but they will get 5,000 bonus miles on top of the miles they had. 
+
+If their total traveled miles is more than 50,000 and less than 100,000 miles, then they will get a free first class upgrade and a they will get 10,000 bonus miles on top of the miles they had. 
+
+If their total traveled miles is 100,000 or more, then they will get a month of free travel and a they will get 20,000 bonus miles on top fo the miles they had. 
+
+
+```{r question7info, message = FALSE}
+passenger <- c("Sarah", "Nate", "Tom", "Sally", "Nelly")
+miles <- c(25000, 150000, 75000, 200000, 50000)
+```
+
+Create a for loop that computes and prints each passenger's gift along with their total accumulated miles (original miles + bonus miles).
+
+The final output should look like: 
+
+
+"Sarah will not get a gift from DSCI 101 Airlines and will end up with a total number of miles of 30000"
+
+"Nate will get a month of free travel and will end up with a total number of miles of 170000"
+
+"Tom will get a free first class upgrade and will end up with a total number of miles of 85000" ... etc.
+
+
+Note: To get full credit, if statements must be written using the variable. 
+
+
+```{r question_6, message=FALSE}
+
+
+
+```
+
+ 
