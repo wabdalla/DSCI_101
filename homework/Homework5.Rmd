@@ -1,0 +1,147 @@
+---
+title: "Homework 5"
+author: "YOUR NAME HERE"
+date: "2024-03-27"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+### **Instructions**
+
+Use functions learned from the tidyverse package to complete this homework assignment. Load all the packages you will use throughout this homework in the loading packages section below.
+
+
+Submit the html file in Sakai before the deadline.
+
+
+### **Loading Packages**
+
+(5 points)
+
+```{r packages, message=FALSE, warning = FALSE}
+
+
+
+
+```
+
+
+### **Exercise 1**
+
+Use the `Teams` dataframe in the `Lahman` package to answer the following:
+
+a) (10 points) Make a line plot of total home runs per season and stratify (facet) by league. Do you see anything interesting that you observe (per league) throughout the years? Note: a season is an entire year. 
+
+*YOUR WRITTEN ANSWER HERE*
+
+```{r ex1a, message=FALSE, warning = FALSE}
+
+
+
+
+
+```
+
+
+b) (10 points) Create an indicator variable called "winning_record" which is defined as `TRUE` if the number of wins is greater than the number of losses and `FALSE` otherwise. Make a scatter plot of Runs (R) (in x axis) vs Runs against (RA) (in y axis) with the color of each point showing whether that team had a winning record or not.
+
+
+```{r ex1b, message=FALSE, warning = FALSE}
+
+
+
+
+```
+
+c) (10 points) Create a scatter plot of strikeouts (SO) (x axis) vs walks (BB) (y axis) faceting by Ranks 1 through 5. 
+
+
+```{r ex1c, message=FALSE, warning = FALSE}
+
+
+
+
+```
+
+d) (10 points) Create a categorical variable with 4 levels: before 1900, 1900-1949, 1950-1999, 2000 or later. Use the `cut` function learned in class to create this variable (make sure your breakpoints correctly include the years in each category). Create a scatter plot of strikeouts (x axis) vs walks (y axis) faceting by Ranks 1 through 5 (as you did in part c) and use this new categorical variable you just created to split your scatter plot into different colors according to the different levels you created. Compare the plot from part c to this new one, now what do you see?
+
+*YOUR WRITTEN ANSWER HERE*
+
+```{r ex1d, message=FALSE, warning = FALSE}
+
+
+
+
+
+```
+
+
+### **Exercise 2**
+
+Using the `flights` data frame in the `nycflight13` package:
+
+a) (5 points) Create a histogram of the departure delays times (dep_delay) for all flights that had a delay time greater than 0.
+
+
+```{r ex2a, message=FALSE, warning = FALSE}
+
+
+
+ 
+```
+
+b) (10 points) Repeat the same histogram, but now facet by month. 
+
+
+```{r ex2b, message=FALSE, warning = FALSE}
+
+
+
+
+
+```
+
+c) (10 points) Create side-by-side vertical boxplots with distance (y axis) and origin (x axis). Have the filled colors of the boxes to be: "cornflowerblue", "cyan", and "darkblue" for EWR, JFK, and LGA, respectively. Have the line of the boxplot be "deeppink"  for all three box plots. Choose a minimal background and choose a title for the plot and label the x and y axis accordingly. 
+
+
+```{r ex2c, message=FALSE, warning = FALSE}
+
+
+
+
+```
+
+### **Exercise 3**
+
+Use `top_colleges_2022` dataset to recreate the images that appear on the attached pdf file.
+
+a) (10 points) Recreate Plot 1 ***exactly*** as it appears on the attached pdf file. Use `firebrick1` and `dodgerblue1` colors to recreate the plot.
+
+
+```{r ex3a, message=FALSE, warning = FALSE}
+
+
+
+
+
+```
+
+
+
+
+b) (20 points) Recreate Plots 2 & 3 ***exactly*** as they appear on the attached pdf file. Report what stands out from each one.
+
+*YOUR WRITTEN ANSWER HERE*
+
+```{r ex3b, message=FALSE, warning = FALSE}
+
+
+
+
+
+
+```
+
+
