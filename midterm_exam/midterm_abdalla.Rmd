@@ -1,0 +1,229 @@
+---
+title: "Exam 1"
+author: "YOUR NAME HERE"
+date: "2025-10-04"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+### **Instructions**
+
+Below is your first midterm take home exam for DSCI 101 - Fall 2025. This exam should be written only by the student. By taking this exam you are not working with any other student in the class or other resources outside of this class. 
+
+You are allowed to consult: 
+
+* Class notes.
+* Class R Scripts. 
+* Class homework. 
+* Help buttons in R. 
+* Class textbooks.
+
+You are NOT allowed to: 
+
+* Search for answers using search engines such as Google. 
+* Search for answers using artificial intelligence programs such as ChatGPT.
+* Consult with anyone (i.e., classmates, tutors, friends, family members... etc) 
+
+**If you are found to be working with someone else (classmate, tutor... etc.) or have used AI softwares to produce your answers, an automatic 0 will be given on the midterm exam (both in class and take home) and you will be reported to the Dean's Office.**
+
+Use functions learned from the `tidyverse` package to complete this exam. Load all the packages you will use throughout this exam in the loading packages section below.
+
+Make sure to answer in full sentences if you see *YOUR WRITTEN ANSWER HERE* after a question. 
+
+Answer each question using this same file. Your codes should go inside the codechunks. 
+
+You will be examining the class survey dataset that you had to take at the beginning of the semester. I have cleaned the dataset for general use. Please refer back to the survey [here](https://forms.office.com/Pages/ResponsePage.aspx?id=408fApwrJEiDeLvPnsWsy0GW1-51jWZMpmlDitVq_wZUOFlRVVlTTzVDNDUyMFY1T1JOUjZMVkhZUy4u). 
+
+
+
+### **File submitted in HTML Format **
+
+Submit the html file in Sakai before the deadline. 10 points will be deducted if submitted in rmd format.
+
+
+### **Loading Packages**
+
+
+```{r packages, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+```
+
+### **Question 1** 
+
+
+(10 points) Using the `midterm_data` excel file found in the midterm_exam folder. Answer the following questions:
+
+a) Read in the csv file and name the dataframe `midterm_data`.  
+
+```{r question_1a, message=FALSE}
+
+
+```
+b) Check the class of the professor_age column. What class should it be? and why is it not reflecting the correct class?  
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+
+```{r question_1b, message=FALSE, warning = FALSE}
+
+
+
+```
+
+c) Within the same dataframe, change the class of the professor_age column into numeric. Note: The data cells in question should turn into an NA, do not attempt to change that.  
+
+```{r question_1c, message=FALSE, warning = FALSE}
+
+
+
+```
+
+d) Check the class of the professor_age column again to make sure the changes you did in part c went through. 
+
+```{r question_1d, message=FALSE}
+
+
+
+```
+
+### **Question 2**
+
+Answer the following questions:
+
+a. (2 points) How many students like each one of the social media platforms? ***Your final output should be a printed dataframe that has 5 rows and two columns reflecting all the social media platforms and the number of students that prefer each social  media platform.***
+
+
+```{r question_2a, message=FALSE}
+
+
+```
+
+b. (4 points) What is the least favorite color? ***Your final output should be a printed dataframe that has two columns and one row reflecting the color that the least amount of students liked and the number of students who like that one color***
+
+```{r question_2b, message=FALSE}
+
+
+```
+
+
+
+c. (4 points) What is the ranking of student's favorite Chicago team? To find the answer to this question, find how many students prefer each each team (do NOT include in your analysis students that chose "None of the above"). ***Your final output should be a printed dataframe that has two columns reflecting the 6 Chicago teams and the number of students in each team. The output should be sorted from the highest number of students to the smallest number of students in each team***
+
+
+```{r question_2c, message=FALSE}
+
+
+
+```
+
+d. (3 points) Prof. Abdalla has two sections of STAT 103 (Sections 001 & 003) this semester. How many students does she have overall in STAT 103? ***Your final output should be a printed dataframe that has one column and one row reflecting the total number of students in STAT 103.***
+
+
+```{r question_2d, message=FALSE}
+
+
+```
+
+
+
+### **Question 3**
+
+(10 points) Categorize students favorite subjects into one of three categories: "Arts and Humanities" (English and Arts), "STEM" (Math and Science), and "Others" (Any other subject that is not mentioned above). Then compute the average exercise time (in hours) per subject category. **Note**: Exercise column represents the number of time students spend exercising each day in **minutes** and your results should be in **hours**.
+
+
+***Your final output should be a printed dataframe that has two columns reflecting the subject categories and the average exercise time in hours for each category***
+
+
+```{r question_3, message=FALSE}
+
+
+```
+
+### **Question 4**
+
+(10 points) A student is considered to be taking a "Statistics Course" if they are taking "STAT 103" or "STAT 203", and they are considered to be taking a "Data Science Course" if they are taking "DSCI 101". Is there a difference in the average value of what students think Prof. Abdalla's age is in Statistics Students vs Data Science Students?  ***Your final output should be a printed dataframe that has two rows and two columns reflecting the course category  (Statistics & Data Science) and another column reflecting the average value of professor's age for each category***
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+
+```{r question_4, message=FALSE}
+
+
+
+```
+
+### **Question 5**
+
+(12 points) In all of Prof. Abdalla's classes, the final grade that a student gets at the end of the semester is computed as a weighted average. What this means is that some categories weigh more than other categories when computing your final average. In DSCI 101, the final grade is computed using the following weights:
+
+|Categories     |Percentage     |
+|:-------------:|:-------------:|
+|Participation  |5%             |
+|Homework       |20%            |
+|First Midterm  |25%            |
+|Second Midterm |25%            |
+|Final Exam     |25%            |
+
+
+The way this works is that every weight is multiplied by the final average score you get in every category. For example, if you get a an average grade of 100, 95, 70, 65, and 85 on participation, homework, first midterm, second midterm, and final exam, respectively, your final grade will be computed as: 
+
+`100*0.05+95*0.20+70*0.25+65*0.25+85*0.25=79`
+
+Create a function such that the argument is a **vector** of scores where the first, second, third, fourth, and fifth elements of the vector represent a student's average score on participation, homework, first midterm, second midterm, and final exam, respectively, and the outcome is the student's final grade in the class. 
+
+Once you are done building the function you have to test it out with the following vector (to make sure it's working properly):
+
+`scores <- c(100, 95, 70, 65, 85)`
+
+
+```{r question_5, message=FALSE}
+
+
+```
+
+### **Question 6**
+
+(15 points) Students at The University of DSCI 101 could be eligible to receive discounts on their student loans based on the grade they got in DSCI 101 and on how much they owe in student loans.
+
+If they get an A in DSCI 101, then their debt is erased and they will pay $0. 
+
+If they get a B in DSCI 101 and they owe less than $10,000, then they will receive a $5,000 discount and they will need to pay the remaining balance. However, if they get a B and owe $10,000 or more, then they will receive a $3,000 discount and they will need to pay the remaining balance. 
+
+Note: It is known that anyone that got a B in DSCI 101, has a loan debt higher than the discount, so you do not need to account for that in the codes. 
+
+If they get a C or below in DSCI 101 they will need to pay the full amount of the debt. 
+
+Below three vectors representing information on 5 students, respectively. The first vector represents their names, the second vector represents the grade they got in DSCI 101, and the third vector represents the amount they owe in student loans. 
+
+```{r question6info, message = FALSE}
+students <- c("Maria", "Liz", "Mohammad", "Manny", "Ye")
+grade_in_dsci <- c("C", "B", "A", "F", "B")
+loans <- c(25000, 6000, 30000, 75000, 50000)
+```
+
+
+Create a for loop that computes and prints the amount of money each student will owe after accounting for the discounts. 
+
+The final output should look like: 
+
+"Maria will not get a discount because of their grades and will end up paying 25000 dollars"
+
+"Liz will get a discount of 5000 dollars and will end up paying 1000 dollars"
+
+"Mohammad will have their debt erased and will end up paying 0 dollars" ... etc.
+
+
+Note: To get full credit, the codes within the loop must be written using the variable. 
+
+
+```{r question_6, message=FALSE}
+
+
+
+```
+
+ 
