@@ -1,0 +1,111 @@
+---
+title: "Homework 6"
+author: "YOUR NAME HERE"
+date: "2025-11-12"
+output: html_document
+---
+
+### **Instructions**
+
+Use functions learned from the tidyverse package to complete this homework assignment. Load all the packages you will use throughout this homework in the loading packages section below.
+
+
+### **File in html Format**
+
+(5 points)
+
+Submit the html file in Sakai before the deadline.
+
+
+### **Loading Packages**
+
+(5 points)
+
+```{r packages, message = FALSE, warning = FALSE}
+
+
+
+```
+
+
+### **Exercise 1**
+
+
+(45 pts) **stringr Problems**. Use the `penguins` dataset from the `palmerpenguins` package to answer the following questions:
+
+(a) Create a new column that combines the species and island names into a single string with a hyphen (-) in between. For example, if the species is "Adelie" and the island is "Torgersen," the new column should contain "Adelie-Torgersen". Using this new column, count how many species/island combinations there are. ***Your final output should be a printed dataframe with two columns reflecting the species/island combination and the number of observations of each combination.***
+
+```{r ex1a, message = FALSE}
+
+
+
+```
+
+(b) Extract the first three letters of the species. Then create a new column named "penguin_id" that includes the penguin's three letter species and the year they were recorded. For instance, if a penguin's species is "Adelie" and the year is 2007, the new column should contain "Ade 2007." Then, using this new column, count how many penguin_id there are in the dataset. ***Your final output should be a printed dataframe with the penguin_id and the number of observations.***
+
+```{r ex1b, message = FALSE}
+
+
+
+```
+
+
+(c) Find the first letter of each island name, then count how many penguins in each island. ***Your final output should be a printed dataframe with two columns. The first column reflects the first letter of each island and the second column reflects the number of penguins in each island***
+
+```{r ex1c, message = FALSE}
+
+
+```
+
+### **Exercise 2**
+
+(20pts) **lubridate Problems**. Use the `flights` dataset from the `nycflights13` package to answer the following questions:
+
+
+(a) Create a new column that combines the year, month, and day columns into one Date class column. For instance, if the year is 2019, the month is 3, and the day is 31, the new column should contain "2019-03-31". Then using that new column, extract what day of the week it is for each date. Finally, count how many flights are in each day of the week. ***Your final output should be a dataframe with 2 columns reflecting the day of the week and the number of flights in each day.***
+
+```{r ex2a, message = FALSE}
+
+
+
+```
+
+(b) Create a new column that reflects each flights departure date in the following format: "Day of the week, Month day, Year" (i.e., "Monday, January 8, 2013"). Then select only that new column, and show the first three rows. To select the first three rows, use the function `head` ***Your final output should be a printed dataframe with one column and three rows.***
+
+
+```{r ex2b, message = FALSE}
+
+
+
+```
+
+### **Exercise 3**
+
+(25pts) **map Problems**
+
+(a) (10 pts) Use the following code to create a dataframe called `dat`. Then find the *mean* of the values columnwise. Use the function `map` or a function from it's family ONLY. ***Your final output should be a vector. Each element of the vector represents the mean values of each of the columns in dat.***
+
+
+      dat <- data.frame(matrix(rnorm(2000, 3, 1), ncol = 10))
+
+
+
+```{r ex3a, message = FALSE}
+
+
+
+```      
+
+
+(b) (15pts) Using the dataset `airquality` in base R, find how many missing values are in each column. Use the function `map` or a function from it's family ONLY. To be able to answer this problem, you need to create a function such that the argument is a vector. The function should give you back the total number of missing values in that vector. 
+
+*Hint: `is.na(x)` checks if every element in a vector is an NA and gives back TRUE (if the element is an NA) and FALSE if it's not. If you use the function `sum` on a logical vector (a vector with TRUE and FALSE) it will give you back the total number of elements that are TRUE in that vector.*
+
+***Your final output should be a vector. Each element of the vector represents the number of missing values for each column of the dataframe.***
+
+```{r ex3b, message = FALSE}
+
+
+
+```
+
