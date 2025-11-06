@@ -1,0 +1,207 @@
+---
+title: "Exam 2"
+author: "YOUR NAME HERE"
+date: "2025-11-09"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+### **Instructions**
+
+Below is your second midterm take home exam for DSCI 101 - Fall 2025. This exam should be written only by the student. By taking this exam you are not working with any other student in the class or other resources outside of this class. 
+
+You are allowed to consult: 
+
+* Class notes.
+* Class R Scripts. 
+* Class homework. 
+* Help buttons in R. 
+* Class textbook.
+
+You are NOT allowed to: 
+
+* Search for answers using search engines such as Google. 
+* Search for answers using artificial intelligence programs such as ChatGPT.
+* Consult with anyone (i.e., classmates, tutors, friends, family members... etc) 
+
+**If you are found to be working with someone else (classmate, tutor... etc.) or have used AI softwares to produce your answers, an automatic 0 will be given on the midterm exam (both in class and take home) and you will be reported to the Dean's Office.**
+
+Use functions learned from the `tidyverse` package to complete this exam. Load all the packages you will use throughout this exam in the loading packages section below.
+
+Answer each question using this same file. Your codes should go inside the codechunks. 
+
+For Question 5, you will need to recreate Plot # 1, which is a pdf that is included in the same folder. 
+
+### **Dataset Description: Student Data**
+
+You will be examining the class survey dataset (`midterm_data`) that you had to take at the beginning of the semester. I have cleaned the dataset for general use and added a few columns with "fake" data. Please refer back to the survey [here](https://forms.office.com/Pages/ResponsePage.aspx?id=408fApwrJEiDeLvPnsWsy0GW1-51jWZMpmlDitVq_wZUOFlRVVlTTzVDNDUyMFY1T1JOUjZMVkhZUy4u). 
+
+In addition to the class survey, you will need to examine three more datasets: `chicago_covid_cases` (see description of this data below), `midterm_studentID`, and `chicago_sports` that are included inside the same file. 
+
+The `midterm_studentID` dataset is a dataset that contains fake student ID's for each student in the `midterm_data` file. 
+
+`chicago_sports` is a file that shows how different sports are categorized. 
+
+
+### **Dataset Description: Chicago COVID Cases**
+
+The dataset, named `chicago_covid_cases.csv`, has been sourced from the City of Chicago Data Portal. It represents COVID-19 cases in Chicago and has been cleaned to ensure a standardized format. The dataset includes key variables such as 'date,' 'total' (total cases for that particular day), 'female' (number of female cases for that particular day), 'male' (number of male cases for that particular day), and columns related to different age groups. 
+
+
+
+
+### **File submitted in HTML Format **
+
+Submit the html file in Sakai before the deadline. 10 points will be deducted from your total score if submitted in rmd format.
+
+
+### **Loading Packages**
+
+
+```{r packages, message = FALSE, warning = FALSE}
+
+library(tidyverse)
+
+```
+
+### **Question 1**
+
+(14 points) 
+
+
+a. Read in the dataset `chicago_covid_cases.csv`. Name the dataframe `cases`.  
+
+```{r question_1a, message = FALSE, warning = FALSE}
+
+
+
+```
+
+b. Transform the `case_date` column into a variable of class "Date" (make this transformation within the same dataframe and make sure the column is still named `case_date`).
+
+```{r question_1b, message = FALSE, warning = FALSE}
+
+```
+c. Using one of the functions from the `map` family functions, check the class of all the columns in `cases`. Make sure your output is in the form of a vector and not a list. ***Your final output should be a printed vector that shows you the class of every column in the dataframe.***
+
+```{r question_1c, message = FALSE, warning = FALSE}
+
+
+
+```
+
+d. Which day of the week had the highest total number of covid cases? To answer this question, create a new column called `day_of_week` based on the `case_date` variable. This new column should contain the actual name of the day of the week in a truncated form (i.e., Sun, Mon... etc). Then compute the total number of cases for each one of the days of the week. Hint: Use the total column to get the total number of cases per day of the week. **Your final output should be a printed dataframe with 1 row and two columns: the day of the week with the highest total number of cases and the total number of cases for that particular day.**
+
+```{r question_1d, message = FALSE, warning = FALSE}
+
+
+
+```
+
+### **Question 2**
+
+(14 points)
+
+a. Read in the dataset `midterm_data.csv` and save it into a dataframe called `midterm_data`.
+
+```{r question_2a, message = FALSE, warning = FALSE}
+
+
+```
+
+b. Read in the dataset `midterm_studentID.csv` and save it into a dataframe called `midterm_studentID`. 
+
+```{r question_2b, message = FALSE, warning = FALSE}
+
+
+
+```
+
+c. Using the column `studentID` in the `midterm_studentID` dataframe, calculate how many students have an ID that starts with the number 8. ***Your final output should be a printed dataframe with one row and one column that show the total number of students that have a student ID that starts with the number 8.***
+
+```{r question_2c, message = FALSE, warning = FALSE}
+
+```
+
+d. Calculate how many students have a student ID that contains the number 4 AND their favorite color is green. ***Your final output should be a printed dataframe with one column and one row that shows you the total number of students that have a student ID that contains a 4 in it AND their favorite color is green.***
+
+```{r question_2d, message = FALSE, warning = FALSE}
+
+
+
+```
+### **Question 3**
+
+(14 points) 
+
+Using the `midterm_data`, make adjacent horizontal boxplots of the exercise time per favorite color.
+
+Make sure that the fill color of each box plot matches the color that is given, (i.e., the boxplot for exercise time for the color yellow must be filled with the color yellow... etc.)
+
+Create a nice plot that has a "minimal" theme (background), an appropriate title, appropriate axis titles, and appropriate leyend title (if there is one). (All titles must start with capital letters). 
+
+
+```{r question_3, message = FALSE, warning = FALSE}
+
+
+
+
+
+```
+
+
+
+### **Question 4**
+
+(14 points) 
+
+a. Create a new function called `sport_type` such that it's argument is a name of a team. If the team is "Bears" or "Blackhawks", then the function will return "American Football or Ice Hockey". If the team is "Chicago Fire" or "Chicago Sky", then the function will return "Soccer or Basketball". If the team is "Cubs" or "White Sox", then the function will return "Baseball". Anything else, the function will return "No Information". 
+
+After creating the function, test the function (individually) with the teams Blackhawks, Chicago Fire, Cubs, and Chicago Bulls. 
+
+***Note: R is case sensitive, so make sure you type the team names as described in the prompt of this problem.*** 
+
+
+```{r question_4a, message = FALSE, warning = FALSE}
+
+
+
+```
+
+b. Apply the function you created in part a to the midterm_data using the `map_chr` function (or any other function in the `map` family). To accomplish this, you must create a new column and applying the new function you created in part a to the column sport. Then calculate how many students like each one of the sport category. ***Your final output should be a printed dataframe with two columns and four rows that shows you the sport categories and the number of students in each category.***   
+
+```{r question_4b, message = FALSE, warning = FALSE}
+
+
+```
+
+### **Question 5**
+
+(14 points) 
+
+a. Read in the dataset `chicago_sports.csv` and save it into a dataframe called `chicago_sports`. 
+
+```{r question_5a, message = FALSE, warning = FALSE}
+
+
+
+```
+
+b. `chicago_sports` is a dataframe that shows different Chicago sports teams and what type of sport they are. Merge `chicago_sports` and `midterm_data` so that we can see every student's favorite type of sport. ***DO NOT PRINT THE DATAFRAME.***
+
+```{r question_5b, message = FALSE, warning = FALSE}
+
+
+
+```
+
+c. Using the results from part b, recreate the attached plot (Plot # 1) EXACTLY as it appears. Colors used are black, royalblue, turquoise1, darkorchid and magenta. 
+
+```{r question_5c, message = FALSE, warning = FALSE}
+
+
+
+
+```

@@ -1,0 +1,115 @@
+Student,major,course_section,grad_class,sport,born,subject,exercise,height_feet,height_inches,social_media,color,cereal,books,fight,professor_age,grade,zodiac
+1,Chemistry BS,STAT 203 - 002,Junior,None of the above,US Northeast,Science,45,5,7,Instagram,White,No,150,Taco,45,B,Aquarius
+2,Data Science,STAT 203 - 002,Junior,None of the above,US Midwest (other than IL),Arts,15,5,2,Instagram,Green,Yes,50,Hot Dog,45,A,Gemini
+3,Data Science with Environmental Science minor,STAT 203 - 002,Sophomore,Cubs,Illinois,Math,30,5,9,Instagram,Blue,No,60,Taco,35,A,Taurus
+4,Chemistry,STAT 203 - 002,Junior,None of the above,Outside of the US,Math,60,5,6,Instagram,White,No,60,Grilled Cheese,30,A,Aries
+5,Psychology,STAT 103 - 001,Sophomore,None of the above,Outside of the US,English,0,5,6,None of the above,Black,No,200,Taco,35,A,Capricorn
+6,Chemistry,STAT 203 - 002,Junior,Blackhawks,Outside of the US,Science,45,5,2,Instagram,Purple,No,80,Hot Dog,40,A,Sagittarius
+7,Nursing ,STAT 103 - 001,Freshman,Cubs,US Northeast,Science,90,4,11,TikTok,Pink,No,12,Taco,35,A,Virgo
+8,Computer Science,STAT 203 - 002,Junior,Cubs,Illinois,Math,45,6,0,Instagram,Purple,Yes,50,Taco,30,B,Aries
+9,Accounting ,STAT 103 - 001,Freshman,Blackhawks,US South,Science,90,5,1,TikTok,Purple,No,Over 30 ,Taco,29,B,Aquarius
+10,Data Science,STAT 203 - 002,Junior,Cubs,US Midwest (other than IL),Science,60,5,1,Instagram,Pink,No,500,Hot Dog,30,A,Gemini
+11,Computer Science,STAT 203 - 002,Junior,None of the above,Illinois,Math,30,5,4,Instagram,Blue,No,50,Taco,32,B,Virgo
+12,Nursing ,STAT 103 - 003,Freshman,Bears,Illinois,English,180,5,2,TikTok,Yellow,No,50,Taco,45,A,Scorpio
+13,Biology,STAT 103 - 001,Freshman,Bears,Illinois,Social studies,60,5,4,Instagram,Pink,No,100+,Hot Dog,42,A,Leo
+14,Secondary education with psychology,STAT 103 - 001,Freshman,Cubs,Illinois,Arts,90,5,0,Instagram,Red,No,200,Hot Dog,45,B,Aries
+15,Software Engineering ,STAT 103 - 001,Sophomore,Cubs,Illinois,Math,120,5,4,Instagram,Pink,Yes,20,Taco,29,B,Aries
+16,Studio Art,STAT 103 - 001,Junior,None of the above,Outside of the US,English,30,5,1,TikTok,Yellow,No,over 80 ,Taco,36,A,Aquarius
+17,Marketing ,STAT 103 - 001,Sophomore,None of the above,Illinois,Math,90,5,6,Instagram,Black,Yes,A lot I didn't really know how much I had,Taco,30,B,Aquarius
+18,Nursing ,STAT 103 - 001,Freshman,None of the above,Illinois,Math,180,5,2,TikTok,Pink,No,50,Grilled Cheese,29,A,Aquarius
+19,Psychology,STAT 103 - 001,Sophomore,None of the above,Illinois,Social studies,30,6,1,TikTok,Purple,No,45,Grilled Cheese,30,A,Scorpio
+20,Accounting & Economics ,STAT 103 - 003,Freshman,None of the above,US Midwest (other than IL),Arts,45,5,7,None of the above,Purple,No,2500,Hot Dog,35,A,Leo
+21,Psychology,STAT 103 - 001,Freshman,Blackhawks,Illinois,Math,120,5,10,Instagram,Blue,No,150,Hot Dog,26,A,Pisces
+22,Nursing,STAT 103 - 003,Freshman,None of the above,US Midwest (other than IL),Math,30,5,4,TikTok,Purple,No,probably 3 ,Taco,31,A,Taurus
+23,Psychology ,STAT 103 - 003,Freshman,White Sox,Illinois,Social studies,30,5,5,Instagram,Green,No,100+,Taco,34,B,Taurus
+24,Psychology,STAT 103 - 003,Freshman,None of the above,Illinois,Math,30,5,2,TikTok,Pink,No,50,Taco,46,C,Virgo
+25,Nursing,STAT 103 - 003,Freshman,Chicago Fire,Illinois,None of the above,60,5,1,TikTok,Red,No,0,Hot Dog,36,A,Aries
+26,Marketing,STAT 103 - 003,Freshman,Chicago Sky,US Midwest (other than IL),English,90,5,6,Snapchat,Pink,No,200,Taco,33,B,Gemini
+27,Business ,STAT 103 - 003,Freshman,None of the above,Illinois,Social studies,60,5,10,Instagram,Blue,No,1000,Hot Dog,43,A,Cancer
+28,Undecided-comp sci,STAT 103 - 003,Freshman,None of the above,Outside of the US,English,120,6,8,Instagram,Green,Yes,30+,Grilled Cheese,32,A,Scorpio
+29,Business management ,STAT 103 - 003,Freshman,None of the above,Illinois,Math,60,5,2,TikTok,Pink,Yes,60,Taco,35,A,Sagittarius
+30,nursing ,STAT 103 - 003,Freshman,Bears,Illinois,Math,30,5,4,Instagram,Yellow,No,65,Taco,30,A,Pisces
+31,Accounting ,STAT 103 - 003,Freshman,Chicago Fire,Illinois,English,75,6,1,Instagram,Red,No,40-60,Taco,30,B,Cancer
+32,Psychology ,STAT 103 - 003,Freshman,None of the above,US Midwest (other than IL),English,30,5,3,TikTok,Pink,No,300?(we had a lot we never actually read),Taco,44,A,Sagittarius
+33,Nursing ,STAT 103 - 003,Freshman,White Sox,Illinois,English,90,4,11,Instagram,Pink,No,around 100,Taco,30,A,Leo
+34,Nursing,STAT 103 - 003,Freshman,None of the above,US West,Science,120,5,0,Instagram,Green,No,10,Taco,30,B,Libra
+35,Business Undecided,STAT 103 - 003,Freshman,Bears,Illinois,Science,80,5,10,Instagram,Red,No,100,Grilled Cheese,38,A,Cancer
+36,Marketing,STAT 103 - 003,Freshman,None of the above,US Midwest (other than IL),Arts,60,5,5,TikTok,Pink,No,6,Hot Dog,35,A,Gemini
+37,film and digital media,STAT 103 - 003,Freshman,Bears,Illinois,Social studies,45,5,6,Instagram,Blue,No,50,Taco,39,A,Libra
+38,Nursing,STAT 103 - 001,Freshman,Bears,Illinois,Social studies,30,5,3,Instagram,Pink,No,250,Taco,42,A,Libra
+39,Nursing ,STAT 103 - 001,Freshman,White Sox,Illinois,Science,60,4,11,Instagram,Pink,No,100,Grilled Cheese,50,B,Virgo
+40,Marketing,STAT 103 - 003,Freshman,Cubs,US Midwest (other than IL),Math,0,5,6,Instagram,Blue,Yes,50,Taco,40,A,Gemini
+41,Nursing ,STAT 103 - 001,Freshman,White Sox,Illinois,Math,60,5,5,TikTok,Pink,No,20,Taco,25,B,Pisces
+42,finance,STAT 103 - 001,Freshman,None of the above,Outside of the US,Math,180,6,2,Instagram,Red,No,100,Grilled Cheese,35,A,Gemini
+43,Political Science,STAT 103 - 001,Freshman,None of the above,US West,Math,120,5,9,None of the above,White,No,Let's say about 100 (readers in the family),Hot Dog,35,A,Aries
+44,Criminal Justice,STAT 103 - 003,Sophomore,Blackhawks,Illinois,English,30,5,4,TikTok,Green,No,10,Hot Dog,35,A,Virgo
+45,Psychology ,DSCI 101 - 002,Freshman,None of the above,US West,Arts,60,6,4,Instagram,Black,Yes,200-250,Grilled Cheese,45,B,Pisces
+46,Nursing,STAT 103 - 001,Freshman,Bears,Illinois,Science,60,5,1,TikTok,Yellow,No,103,Taco,32,B,Taurus
+47,Marketing,STAT 103 - 001,Freshman,Chicago Fire,Illinois,English,150,5,8,Instagram,Blue,No,100+,Grilled Cheese,29,A,Pisces
+48,Finance,STAT 103 - 001,Freshman,Blackhawks,Illinois,English,90,5,6,Instagram,Red,No,40,Taco,32,A,Aquarius
+49,Psychology,STAT 103 - 001,Freshman,None of the above,Illinois,Social studies,100,5,4,Instagram,Green,No,200,Grilled Cheese,43,A,Taurus
+50,Computer Science,STAT 203 - 002,Junior,Blackhawks,US Midwest (other than IL),Science,60,5,10,Instagram,Blue,Yes,1000,Taco,30,B,Libra
+51,Engineering ,STAT 203 - 002,Junior,Blackhawks,US West,Math,60,5,8,TikTok,Orange,No,Too many…..like 90? 100? (Big family with big readers),Hot Dog,28,A,Capricorn
+52,Biochemistry,STAT 203 - 002,Sophomore,Cubs,Illinois,Math,30,5,8,Instagram,Green,No,30,Hot Dog,31,A,Aquarius
+53,Exercise Science ,STAT 103 - 001,Junior,Bears,Illinois,Math,90,5,11,TikTok,Red,Yes,30,Taco,45,A,Sagittarius
+54,Biochemistry,STAT 203 - 002,Sophomore,Cubs,Illinois,Math,60,5,5,Instagram,Black,No,20,Hot Dog,27,A,Aries
+55,Nursing,STAT 103 - 001,Freshman,Cubs,Outside of the US,Arts,45,5,4,Instagram,Green,No,200,Grilled Cheese,33,A,Virgo
+56,Chemistry,STAT 203 - 002,Sophomore,None of the above,US Midwest (other than IL),Science,120,5,0,TikTok,Pink,No,so many. bookshelves in bedrooms and computer room. over 100,Grilled Cheese,doesnt look a day over 20,B,Capricorn
+57,Data Science,DSCI 101 - 002,Freshman,Bears,US Midwest (other than IL),Social studies,60,5,6,TikTok,Purple,Yes,70,Grilled Cheese,32,B,Aries
+58,Political Science and Chemistry,STAT 203 - 002,Junior,Cubs,US Midwest (other than IL),Science,30,5,8,Instagram,Purple,No,120,Grilled Cheese,27,A,Pisces
+59,Nursing ,DSCI 101 - 002,Freshman,Chicago Fire,Outside of the US,Math,30,5,2,Snapchat,Green,No,3,Taco,35,A,Sagittarius
+60,Information Technology (Computer Science),STAT 203 - 002,Senior,None of the above,Outside of the US,Math,60,5,8,Instagram,Blue,No,20,Taco,34,B,Leo
+61,Psychology ,DSCI 101 - 002,Senior,Bears,Illinois,Arts,60,5,8,Instagram,Green,No,50,Taco,35,A,Leo
+62,Statistics,DSCI 101 - 002,Senior,Blackhawks,Illinois,Math,30,5,3,Instagram,Red,No,110,Taco,36,B,Cancer
+63,Data Science,DSCI 101 - 002,Freshman,Bears,Outside of the US,Science,90,5,9,Snapchat,Black,Yes,150,Hot Dog,43,A,Pisces
+64,Psychology ,DSCI 101 - 002,Freshman,Cubs,US Midwest (other than IL),Science,30,5,5,TikTok,Pink,No,10,Taco,41,A,Gemini
+65,Neuroscience: Cognitive and Behavioral,DSCI 101 - 002,Senior,None of the above,US Midwest (other than IL),Science,60,5,10,Instagram,Blue,No,900,Taco,43,A,Leo
+66,Psychology ,DSCI 101 - 002,Junior,Cubs,US South,None of the above,20,5,5,Instagram,Green,No,200,Taco,38,A,Pisces
+67,"History, Pre-Law",STAT 103 - 003,Freshman,White Sox,Illinois,Social studies,30,6,2,Instagram,Red,No,1500,Taco,43,B,Capricorn
+68,Computer Science,STAT 203 - 002,Junior,Bears,Outside of the US,Science,35,5,10,Instagram,Blue,No,20-Oct,Taco,Trick question to ask but I would say 25 or older,A,Scorpio
+69,Communications ,STAT 103 - 001,Sophomore,Cubs,US Midwest (other than IL),English,90,5,4,TikTok,Blue,No,100+,Hot Dog,38,A,Cancer
+70,"Journalism (possibly Economics as well, thats why Im here)",STAT 103 - 001,Sophomore,White Sox,US South,Social studies,120,6,0,Instagram,Red,No,100,Hot Dog,35,B,Libra
+71,PR & Advertising,STAT 103 - 003,Freshman,Cubs,Illinois,English,45,4,11,TikTok,Pink,No,20-30,Taco,35,A,Aries
+72,Chemistry,STAT 203 - 002,Sophomore,None of the above,US South,None of the above,30,5,6,X.com (Twitter),Pink,No,20+,Grilled Cheese,40,A,Pisces
+73,Biology - Ecology // Cognitive & Behavorial Neuroscience,DSCI 101 - 002,Senior,Cubs,Illinois,Science,120,5,2,Instagram,Purple,No,150,Taco,37,A,Sagittarius
+74,Nursing ,STAT 103 - 003,Freshman,None of the above,Illinois,Science,60,5,9,TikTok,Blue,Yes,37,Grilled Cheese,32,B,Aquarius
+75,Double major in Computer Engineering and Finance,STAT 203 - 002,Sophomore,Cubs,Illinois,Math,40,5,4,Snapchat,Green,No,100,Grilled Cheese,36,A,Cancer
+76,Biochemistry,STAT 203 - 002,Sophomore,Cubs,Illinois,Math,60,5,3,TikTok,Purple,No,hundreds,Taco,38,B,Gemini
+77,Computer Science,STAT 203 - 002,Sophomore,Bears,US Northeast,Math,10,5,5,None of the above,Green,Yes,100,Taco,30,A,Leo
+78,Biochemistry ,STAT 203 - 002,Sophomore,Cubs,US Midwest (other than IL),Arts,30,5,5,Instagram,Green,No,150,Hot Dog,30,B,Aries
+79,Nursing,STAT 103 - 001,Freshman,Blackhawks,US South,Social studies,20,5,2,TikTok,Pink,No,2,Hot Dog,35,B,Virgo
+80,Data Science,DSCI 101 - 002,Freshman,None of the above,Illinois,Math,60,5,3,TikTok,Green,No,60,Grilled Cheese,39,A,Aries
+81,Psychology,STAT 103 - 003,Freshman,Bears,Illinois,Math,180,5,11,Snapchat,Purple,Yes,100,Grilled Cheese,34,A,Sagittarius
+82,Psychology,STAT 103 - 003,Freshman,None of the above,US Midwest (other than IL),English,45,5,0,TikTok,Green,Yes,56,Taco,32,B,Cancer
+83,Undecided,STAT 103 - 003,Sophomore,None of the above,Illinois,Social studies,30,5,8,TikTok,Purple,No,100,Taco,35,B,Sagittarius
+84,chemistry,STAT 203 - 002,Sophomore,Cubs,Illinois,Science,15,6,3,TikTok,Blue,No,30-40,Grilled Cheese,32,A,Cancer
+85,Political Science,STAT 103 - 003,Freshman,None of the above,US Northeast,Social studies,30,5,8,TikTok,Red,No,35,Hot Dog,38,B,Libra
+86,BBA,STAT 103 - 003,Freshman,None of the above,Illinois,English,30,5,7,Snapchat,Blue,No,20,Taco,35,B,Cancer
+87,Applied Mathematics,STAT 203 - 002,Sophomore,Blackhawks,US Midwest (other than IL),English,30,5,3,TikTok,Blue,No,200,Hot Dog,30,B,Pisces
+88,Cognitive Behavorial Neuroscience ,DSCI 101 - 002,Senior,None of the above,Illinois,Science,30,5,3,TikTok,Purple,No,500+,Grilled Cheese,42,A,Cancer
+89,Mathematics,STAT 203 - 002,Junior,None of the above,Illinois,None of the above,30,6,0,Instagram,Black,No,"A lot, given my mom ran a daycare. ",Grilled Cheese,37,B,Pisces
+90,Psychology,STAT 103 - 001,Freshman,None of the above,Illinois,Arts,0,5,1,Instagram,Green,No,20,Taco,29,A,Pisces
+91,Not decided,STAT 103 - 003,Freshman,None of the above,Outside of the US,Arts,30,5,4,None of the above,Pink,No,500,Hot Dog,32,A,Scorpio
+92,Cognitive & Behavioral Neuroscience ,DSCI 101 - 002,Junior,None of the above,Illinois,English,30,5,0,TikTok,Green,No,200,Taco,30,A,Virgo
+93,Computer Science,STAT 203 - 002,Senior,None of the above,Illinois,Math,60,5,10,TikTok,Blue,No,50,Taco,29,A,Aries
+94,Nursing,STAT 103 - 003,Freshman,White Sox,Outside of the US,Arts,30,5,0,Instagram,Purple,Yes,5,Hot Dog,30,A,Leo
+95,Accounting,STAT 103 - 003,Freshman,Chicago Fire,Outside of the US,Math,35,5,11,Instagram,Blue,No,dozens,Taco,26,A,Virgo
+96,Computer Science,STAT 203 - 002,Senior,Bears,Outside of the US,Math,60,5,5,Instagram,Green,No,10-Jul,Grilled Cheese,32,A,Leo
+97,Biology ,STAT 203 - 002,Junior,None of the above,Outside of the US,None of the above,20,5,5,Instagram,Black,No,100,Hot Dog,35,B,Taurus
+98,Cognitive and Behavioral Neuroscience,DSCI 101 - 002,Junior,Bears,US Midwest (other than IL),Science,60,5,9,Instagram,Blue,No,75,Hot Dog,34,A,Sagittarius
+99,Engineering,STAT 203 - 002,Junior,Cubs,Illinois,Social studies,60,5,4,X.com (Twitter),Blue,No,170,Taco,30,A,Gemini
+100,Public Health,STAT 103 - 001,Junior,None of the above,Illinois,Arts,180,5,5,TikTok,Pink,No,30,Grilled Cheese,30,A,Pisces
+101,Data Science ,DSCI 101 - 002,Freshman,Bears,US Northeast,Social studies,60,6,2,TikTok,Red,No,Probably more than 20,Taco,40,A,Leo
+102,Healthcare Administration ,STAT 203 - 002,Sophomore,Cubs,US West,Science,60,5,2,Instagram,Pink,Yes,100,Grilled Cheese,30,A,Gemini
+103,Computer Science,DSCI 101 - 002,Senior,None of the above,Illinois,Social studies,90,5,10,Instagram,Black,No,10,Hot Dog,36,A,Gemini
+104,Biochemistry,STAT 203 - 002,Sophomore,None of the above,Illinois,Math,0,5,6,Instagram,Blue,Yes,"1,000+ I got too many that I can't store any anymore",Grilled Cheese,38,A,Leo
+105,mathematics + finance,STAT 203 - 002,Sophomore,Blackhawks,Illinois,Arts,150,6,0,Instagram,Purple,Yes,20,Hot Dog,20,A,Pisces
+106,Nursing,STAT 103 - 001,Freshman,Cubs,US West,Arts,50,5,1,TikTok,Purple,No,100,Hot Dog,35,A,Taurus
+107,Nursing ,STAT 103 - 001,Freshman,Cubs,US Midwest (other than IL),Science,60,5,0,Instagram,Pink,No,200,Hot Dog,35,A,Aquarius
+108,Nursing,STAT 103 - 001,Senior,White Sox,Illinois,None of the above,60,5,11,None of the above,Purple,No,130?,Grilled Cheese,33,B,Taurus
+109,"Data Science, Political Science",DSCI 101 - 002,Freshman,Blackhawks,Illinois,Social studies,20,5,9,Instagram,Green,Yes,150,Hot Dog,40,A,Pisces
+110,Psychology,DSCI 101 - 002,Senior,White Sox,US West,Science,90,6,0,None of the above,Purple,No,50,Hot Dog,38,A,Scorpio
+111,Accounting,STAT 103 - 001,Junior,Cubs,US Northeast,Social studies,30,5,10,None of the above,Red,Yes,20 physical/ several hundred e-books,Grilled Cheese,27,B,Scorpio
+112,Human Resource Management,STAT 103 - 001,Freshman,Bears,US South,Social studies,30,5,6,Instagram,Pink,No,200-300,Hot Dog,30,A,Taurus
+113,Data Science,DSCI 101 - 002,Freshman,Cubs,Illinois,Math,60,5,8,Instagram,Green,No,25,Hot Dog,30,B,Virgo
+114,Psychology ,STAT 103 - 001,Senior,Blackhawks,Outside of the US,Science,30,5,6,TikTok,Pink,No,100,Taco,38,A,Virgo
