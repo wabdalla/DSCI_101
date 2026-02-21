@@ -1,0 +1,237 @@
+---
+title: "Exam 1"
+author: "YOUR NAME HERE"
+date: "2026-02-21"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+### **Instructions**
+
+Below is your first midterm take home exam for DSCI 101 - Spring 2026. This exam should be written only by the student. By taking this exam you are not working with any other student in the class or other resources outside of this class. 
+
+You are allowed to consult: 
+
+* Class notes.
+* Class R Scripts. 
+* Class homework. 
+* Help buttons in R. 
+* Class textbooks.
+
+You are NOT allowed to: 
+
+* Search for answers using search engines such as Google. 
+* Search for answers using artificial intelligence programs such as ChatGPT.
+* Consult with anyone (i.e., classmates, tutors, friends, family members... etc) 
+
+**If you are found to be working with someone else (classmate, tutor... etc.) or have used AI softwares to produce your answers, an automatic 0 will be given on the midterm exam (both in class and take home) and you will be reported to the Dean's Office.**
+
+Use functions learned from the `tidyverse` package to complete this exam. Load all the packages you will use throughout this exam in the loading packages section below.
+
+Make sure to answer in full sentences if you see *YOUR WRITTEN ANSWER HERE* after a question. 
+
+Answer each question using this same file. Your codes should go inside the codechunks. 
+
+You will be examining the class survey dataset that you had to take at the beginning of the semester. I have cleaned the dataset for general use. Please refer back to the survey [here](https://forms.office.com/Pages/ResponsePage.aspx?id=408fApwrJEiDeLvPnsWsy0GW1-51jWZMpmlDitVq_wZURTBONDJFWENXUjJDWlFCUzFaNjc3WVRUMS4u). 
+
+
+
+### **File submitted in HTML Format **
+
+Submit the html file in Sakai before the deadline. 10 points will be deducted if submitted in rmd format.
+
+
+### **Loading Packages**
+
+
+```{r packages, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+```
+
+### **Question 1** 
+
+
+(10 points) Using the `midterm_data` excel file found in the first_midterm_exam folder. Answer the following questions:
+
+a) Read in the csv file and name the dataframe `midterm_data`.  
+
+```{r question_1a, message=FALSE}
+
+
+
+```
+b) Check the class of the variable `hours_sleep`. What class should it be? and why is it not reflecting the correct class?  
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+
+```{r question_1b, message=FALSE, warning = FALSE}
+
+
+
+```
+
+c) Within the same dataframe, change the class of the `hours_sleep` column into numeric. Note: The data cells in question should turn into an NA, do not attempt to change that.  
+
+```{r question_1c, message=FALSE, warning = FALSE}
+
+
+
+
+```
+
+d) Check the class of the `hours_sleep` column again to make sure the changes you did in part c went through. 
+
+```{r question_1d, message=FALSE}
+
+
+```
+
+### **Question 2**
+
+Answer the following questions:
+
+a. (2 points) What is the average screen time per graduating class? ***Your final output should be a printed dataframe that has 4 rows and two columns reflecting all the graduating classes and the corresponding average screen time.***
+
+
+```{r question_2a, message=FALSE}
+
+
+
+```
+
+b. (4 points) What grade did most students get in Calculus? ***Your final output should be a printed dataframe that has two columns and one row reflecting the grade with the highest number of students and the number of students that got that grade.***
+
+```{r question_2b, message=FALSE}
+
+
+
+```
+
+
+
+c. (4 points) What is the ranking of students' favorite subject? To find the answer to this question, find how many students prefer each subject (do NOT include in your analysis students that chose "None of the above"). ***Your final output should be a printed dataframe that has two columns reflecting the 5 subjects and the number of students in each subject. The output should be sorted from the largest number of students to the smallest number of students in each subject***
+
+
+```{r question_2c, message=FALSE}
+
+
+
+```
+
+d. (3 points) How many students are either seniors or juniors? ***Your final output should be a printed dataframe that has one column and one row reflecting the total number of students that are Juniors or Seniors.***
+
+
+```{r question_2d, message=FALSE}
+
+
+```
+
+
+
+### **Question 3**
+
+(10 points) If a person is 5'7 (5 feet and 7 inches), then their total height in inches is 67 inches (since there are 12 inches per foot). Find each student's total height in inches. Then find the minimum, mean, median, and maximum height in inches across all students. ***Your final output should be a printed dataframe that has one row and four columns reflecting the minumum, mean, median, and maximum total height (in inches) across all students***
+
+
+
+
+```{r question_3, message=FALSE}
+
+
+```
+
+### **Question 4**
+
+(10 points) Is there a difference in the number of hours of sleep and the number of minutes of screen time based on whether a student is "older" or "younger"? 
+
+A student is considered to be "Older" if their graduating class is a "Senior" or a  "Junior" and is considered "Younger" if their graduating class is "Freshman" or "Sophomore". 
+
+To answer the question above, calculate the average hours of sleep and the average minutes of screen time for "older" vs "younger" students. Write one or two sentences on your observed results. 
+
+***Your final output should be a printed dataframe that has two rows and three columns reflecting the age group, the mean hours of sleep, and the mean minutes of screen time.***
+
+*YOUR WRITTEN ANSWER HERE*
+
+
+
+```{r question_4, message=FALSE}
+
+
+
+```
+
+### **Question 5**
+
+(12 points) The Harris-Benedict equation is a mathematical formula that gives you an estimate of an individual’s basal metabolic rate (BMR) using the individual’s mass (M), height (H), age (A), and whether the individual is male or a female.
+
+If the individual is a female, then their BMR can be calculated as: 
+`BMR = 9.247*M + 3.098*H - 4.330*A + 447.593`
+
+If the individual is a male, then their BMR can be calculated as: 
+`BMR = 13.397*M + 4.799*H - 5.677*A + 88.362`
+
+Create a single function called BMR_yourname (i.e. BMR_abdalla), such that the arguments are mass, height, age, and sex, which represent an individual’s body mass, height in centimeters, age in years, and whether they are a female or a male; respectively. 
+
+The function should return the subject’s basal metabolic rate (BMR). 
+
+Test your function on an individual that has a mass of 20, a height of 170 cm, is 25 years old, and is a male. 
+
+Test your function on an individual that has a mass of 24.9, a height of 155 cm, is 35 years old, and is a female. 
+
+
+
+```{r question_5, message=FALSE}
+
+
+
+```
+
+### **Question 6**
+
+(15 points) In the industry, there is a company called DSCI 101 Corp. In this company, the salary and benefits the employees get depend on the number of tasks each person has successfully completed. 
+
+If their total number of completed tasks is less than 50, then they will get fired and will be paid a salary of $1000 for their service.  
+
+If their total number of completed tasks is 50 or more and less than 100, then they will get full medical insurance and they will get a salary of $75,000 and in addition they will get $10 for every task they completed. 
+
+If their total number of completed tasks is 100 or more, then they will get full medical insurance and 20 days of PTO. They will get a salary of $150,000 and in addition they will get $50 for every task they completed. 
+
+DSCI 101 Corp. has 5 employees. Their names and number of completed tasks is below: 
+
+```{r question7info, message = FALSE}
+
+person <- c("Jean", "Mohammad", "Wei", "Luz", "Derek")
+completed_tasks <- c(35, 200, 55, 150, 5)
+
+```
+
+
+Create a for loop that computes and prints the benefits and the amount of money each person will make. 
+
+The final output should look like: 
+
+
+
+"Jean will get fired and will get a salary of $1000"
+
+"Mohammad will get full medical insurance, 20 days of PTO, and a salary of $160000"
+
+"Wei will get full medical insurance and will get a salary of $75550"... etc.
+
+
+Note: To get full credit, the codes within the loop must be written using the variable. 
+
+
+```{r question_6, message=FALSE}
+
+
+  
+
+
+```
+
+ 
