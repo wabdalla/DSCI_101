@@ -1,0 +1,207 @@
+---
+title: "Exam 2"
+author: "YOUR NAME HERE"
+date: "2026-03-29"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+### **Instructions**
+
+Below is your second midterm take home exam for DSCI 101 - Spring 2026. This exam should be written only by the student. By taking this exam you are not working with any other student in the class or other resources outside of this class. 
+
+You are allowed to consult: 
+
+* Class notes.
+* Class R Scripts. 
+* Class homework. 
+* Help buttons in R. 
+* Class textbook.
+
+You are NOT allowed to: 
+
+* Search for answers using search engines such as Google. 
+* Search for answers using artificial intelligence programs such as ChatGPT.
+* Consult with anyone (i.e., classmates, tutors, friends, family members... etc) 
+
+**If you are found to be working with someone else (classmate, tutor... etc.) or have used AI softwares to produce your answers, an automatic 0 will be given on the midterm exam (both in class and take home) and you will be reported to the Dean's Office.**
+
+Use functions learned from the `tidyverse` package to complete this exam. Load all the packages you will use throughout this exam in the loading packages section below.
+
+Answer each question using this same file. Your codes should go inside the codechunks. 
+
+For Question 5, you will need to recreate Plot # 1, which is a pdf that is included in the same folder. 
+
+### **Dataset Description: Student Data**
+
+You will be examining the class survey dataset (`midterm_data`) that you had to take at the beginning of the semester. I have cleaned the dataset for general use and added a few columns with "fake" data. Please refer back to the survey [here](https://forms.office.com/Pages/ResponsePage.aspx?id=408fApwrJEiDeLvPnsWsy0GW1-51jWZMpmlDitVq_wZURTBONDJFWENXUjJDWlFCUzFaNjc3WVRUMS4u). 
+
+In addition to the class survey, you will need to examine two more datasets that are included inside the same file: `midterm_studentID` and `social_media`. 
+
+The `midterm_studentID` is a dataset that contains fake student ID's for each student in the `midterm_data` file. 
+
+`social_media` is a dataset that shows how different social media platforms could be categorized. 
+
+
+### **File submitted in HTML Format **
+
+Submit the html file in Sakai before the deadline. 10 points will be deducted from your total score if submitted in rmd format.
+
+
+### **Loading Packages**
+
+
+```{r packages, message = FALSE, warning = FALSE}
+
+library(tidyverse)
+
+```
+
+### **Question 1**
+
+(14 points) 
+
+
+a. Read in the dataset `midterm_data.csv` and save it into a dataframe called `midterm_data`. 
+
+```{r question_1a, message = FALSE, warning = FALSE}
+
+
+
+```
+
+b. Transform the `birthdate` column into a variable of class "Date" (make this transformation within the same dataframe and make sure the column is still named `birthdate`).
+
+```{r question_1b, message = FALSE, warning = FALSE}
+
+
+
+```
+
+
+c. Using one of the functions from the `map` family functions, check the class of all the columns in `midterm_data`. Make sure your output is in the form of a vector and not a list. ***Your final output should be a printed vector that shows you the class of every column in the dataframe.***
+
+```{r question_1c, message = FALSE, warning = FALSE}
+
+ 
+
+```
+
+d. In what year were most students born? **Your final output should be a printed dataframe with 1 row and two columns: the birth year with the highest number of students and the number of students that were born that year. **
+
+```{r question_1d, message = FALSE, warning = FALSE}
+
+
+
+```
+
+### **Question 2**
+
+(14 points)
+
+
+a. Read in the dataset `midterm_studentID.csv` and save it into a dataframe called `midterm_studentID`. 
+
+```{r question_2a, message = FALSE, warning = FALSE}
+
+
+
+```
+
+b. Use the column `student_ID` in the `midterm_studentID` dataframe to answer this question. All student ID's have exactly 7 digits, and each student has a unique ID. How many students have a student ID that has a 0 in it? ***Your final output should be a printed dataframe with one row and one column that show the total number of students that have a student ID that has a 0 in it.***
+
+```{r question_2b, message = FALSE, warning = FALSE}
+
+
+
+```
+
+
+
+c. All student ID's have exactly 7 digits, and each student has a unique ID. Find the student ID of the two students that were born in Illinois AND their ID ends in 82. ***Your final output should be a printed dataframe with one column and two rows representing the student IDs that end in 82 for the two students that were born in Illinois.***
+
+```{r question_2c, message = FALSE, warning = FALSE}
+
+
+
+```
+### **Question 3**
+
+(14 points) 
+
+Using the `midterm_data`, make a bar graph on the number of students per favorite color. The following conditions must be included in your plot: 
+
+* The color of every bar must match the color it is representing. For example, the bar that is representing the number of student that their favorite color is blue, must be of color blue... etc. 
+
+* You should use a "test" theme (background). 
+
+* Title must be "Bar Graph of Favorite Colors". One of the axis title should be "Number of Students" and the other axis title should be "Favorite Color". You must match the axis title accordingly.
+
+* The bars must appear horizontal instead of vertical.
+
+
+
+```{r question_3, message = FALSE, warning = FALSE}
+
+
+
+```
+
+
+
+### **Question 4**
+
+(14 points) 
+
+a. Create a new function called `social_media_category` such that it's argument is a name of a social media platform. If the social media platform is "Facebook" or "LinkedIn", then the function will return "Social Network". If it's "TikTok", "Instagram" or "Snapchat", then the function will return "Media Sharing". If it's "WhatsApp" or "Messenger", then the function will return "Messaging App". Anything else, the function will return "Other Apps". 
+
+After creating the function, test the function (individually) with these social media apps: LinkedIn, Instagram, WhatsApp, and YouTube. 
+
+***Note: R is case sensitive, so make sure you type the social media names EXACTLY as described in the prompt of this problem.*** 
+
+
+```{r question_4a, message = FALSE, warning = FALSE}
+
+
+
+```
+
+b. In the `midterm_data`, every student selected a favorite social media platform. Using the aid of the function you created above and the aid of the `map_chr` function (or any other function in the `map` family), find out how many students you have in each of the 4 social categories you created above. 
+
+To accomplish this, you must create a new column in `midterm_data`, then apply the new function you created in part a to the column social_media using the `map_chr` function (or any other function in the `map` family). Then calculate how many students are in each one of the social media categories. ***Your final output should be a printed dataframe with two columns and four rows that shows you the social media categories and the number of students in each category.***   
+
+```{r question_4b, message = FALSE, warning = FALSE}
+
+
+
+```
+
+### **Question 5**
+
+(14 points) 
+
+a. Read in the dataset `social_media.csv` and save it into a dataframe called `social_media`. 
+
+```{r question_5a, message = FALSE, warning = FALSE}
+
+
+```
+
+b. `social_media` is a dataframe that shows different social media applications and how they are categorized. Merge `social_media` and `midterm_data` so that we can see every student's favorite social media with the new category. ***DO NOT PRINT THE DATAFRAME.***
+
+```{r question_5b, message = FALSE, warning = FALSE}
+
+
+
+```
+
+c. Using the results from part b, recreate the attached plot (Plot # 1) EXACTLY as it appears. Colors used are navy, royalblue1, deepskyblue, and turquoise1. The color of the line is black. 
+
+```{r question_5c, message = FALSE, warning = FALSE}
+
+
+
+
+```
