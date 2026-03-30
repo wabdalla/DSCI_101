@@ -1,0 +1,132 @@
+---
+title: "Second Midterm In Class"
+author: "YOUR NAME HERE"
+date: "2026-03-30"
+output: html_document
+---
+
+Same rules from the take home exam hold.
+
+### **Loading Packages**
+
+```{r packages, message = FALSE, warning = FALSE}
+library(tidyverse)
+```
+
+### **Read in Datasets**
+
+Read in `midterm_data.csv` and name it `midterm_data`.
+
+```{r read_data, message = FALSE, warning = FALSE}
+
+
+
+```
+
+
+### **Question 1** 
+
+How many students are there per course section and graduating class? 
+
+The output in one column should look like: 
+
+DSCI 101 - 002 - Freshman 
+
+DSCI 101 - 002 - Junior     
+
+DSCI 101 - 002 - Senior
+
+... etc. 
+
+***Your final output should be a printed dataframe with 2 columns and 11 rows. ***
+
+```{r question_1, message = FALSE, warning = FALSE}
+
+
+
+
+```
+
+
+
+### **Question 2**
+
+a. Transform the `birthdate` column into a variable of class "Date" (make this transformation within the same dataframe and make sure the column is still named `birthdate`).
+
+```{r question_2a, message = FALSE, warning = FALSE}
+
+
+
+
+```
+b. In what month were most students born? To get full credit, make sure the full name of the month (i.e., "January") appears. 
+
+
+***Your final output should have 2 columns and one row.***
+
+```{r question_2b, message = FALSE, warning = FALSE}
+
+
+
+
+
+```
+
+
+### **Question 3**
+
+Recreate Question 3 Dataframe.
+
+Question 3 Dataframe represents the number of students per graduating class vs their belief on who would win a fight (Grilled Cheese, Hot Dog, Taco). Use `midterm_data` to repoduce this dataframe.
+
+Hint: You need to compute the number of students by per fight and graduating class.   
+
+***Your final output should be the recreated dataframe printed.*** 
+
+```{r question_3, message = FALSE, warning = FALSE}
+
+
+
+
+```
+
+
+### **Question 4**
+
+Recreate Question 4 Plot. 
+
+***Make sure the plot is printed***
+
+```{r question_4, message = FALSE, warning = FALSE}
+
+
+
+
+
+```
+
+
+### **Question 5**
+
+The function below takes the square of a number that is larger than 205 and takes the cube otherwise. 
+Apply this function to each observation of the `minutes_screen` column using one of the `map` functions. After that, take the average across all these observations. 
+
+***You final output should be one printed value.***
+
+```{r question_5, message = FALSE, warning = FALSE}
+
+
+square_cube <- function(x){
+  if(x>205){
+    output = x^2
+  }else{
+    output = x^3
+  }
+}
+
+
+
+
+
+
+```
